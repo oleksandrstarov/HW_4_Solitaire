@@ -15,7 +15,6 @@ function Card(suites, value){
 Card.prototype.createElement = function(){
     var element = document.createElement('div');
     element.classList.add('card');
-    element.style.background = 'url("../img/card-deck-01.jpg")';
     element.style.backgroundPosition = cardConstants.back.positionX + ' ' + cardConstants.back.positionY;
     return element;
 };

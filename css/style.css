@@ -78,6 +78,7 @@ p{
     width: 123px;
     height: 175px;
     border: 1px solid lightgray;
+    background-image: url('../img/card-deck-01.jpg');
     border-radius: 10px;
     position: absolute;
 }

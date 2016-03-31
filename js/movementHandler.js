@@ -36,7 +36,6 @@ MovementHandler.prototype.dragHandler = function(card){
         };
         
         cardElement.onmouseup = function(e){
-            debugger;
             cardElement.style.zIndex = 'inherit';
             var targetElement = self.getTargetElementOnMouseUp(e.x, e.y);
             var isSucess = false;
