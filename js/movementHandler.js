@@ -36,6 +36,7 @@ MovementHandler.prototype.dragHandler = function(card){
         };
         
         cardElement.onmouseup = function(e){
+            debugger;
             cardElement.style.zIndex = 'inherit';
             var targetElement = self.getTargetElementOnMouseUp(e.x, e.y);
             var isSucess = false;
@@ -68,7 +69,6 @@ MovementHandler.prototype.assignCardsToNewSets = function(draggedCards, targetOb
         game.view.moveCard(draggedCards[0].element);
         return false;
     }
-    console.log(targetObject);
     if(targetObject.isPossibleToAttach(draggedCards[0])){
         for(var card in draggedCards){
             draggedCards[card].changeSet(targetObject);

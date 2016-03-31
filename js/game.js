@@ -79,9 +79,10 @@ Game.prototype.checkComplition = function(){
         for(var i = 0; i < game.homeSetsArray.length; i++){
             completedCards += game.homeSetsArray[i].cardsArray.length;
         }
-        console.log(game.homeSetsArray);
         if(completedCards === 52){
             alert('You Win! Congratulations!');
+            game.view.reset();
+            startGame();
         };
             
     }, 10);

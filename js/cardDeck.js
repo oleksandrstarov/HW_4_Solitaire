@@ -20,7 +20,6 @@ CardDeck.prototype.createCardDeck = function(actionHandler){
 };
 
 CardDeck.prototype.shuffle = function(){
-    
     this.cards.sort(function(){
         return Math.random() -.5;
     });
@@ -30,7 +29,7 @@ CardDeck.prototype.shuffle = function(){
 CardDeck.prototype.removeCard = function(card){
     card.isDeck = false;
     var cardIndex = this.cards.indexOf(card);
-    if(cardIndex > 0 && this.cards.length > 0){
+    if(cardIndex >= 0 && this.cards.length > 0){
         this.cards.splice(cardIndex, 1);
     }
 };

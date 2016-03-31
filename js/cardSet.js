@@ -59,7 +59,6 @@ CardSet.prototype.removeCard = function(card){
     if(cardIndex >= 0 && this.cards.length > 0){
         this.cards.splice(cardIndex, 1);
     }
-    console.log(this.cards);
     
     if(this.cards.length > 0){
         var lastCard = this.cards[this.cards.length-1];

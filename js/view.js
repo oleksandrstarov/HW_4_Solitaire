@@ -39,5 +39,11 @@ function View(){
         card.element.style.backgroundPosition = cardConstants.back.positionX + ' ' + cardConstants.back.positionY;
     };
     
+    this.reset = function(){
+        var cardsArray = document.querySelectorAll('.card');
+        for(var i = 0; i< cardsArray.length; i++){
+            cardsArray[i].remove();
+        }
+    }
     
 }

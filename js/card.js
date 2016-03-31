@@ -25,13 +25,9 @@ Card.prototype.allowOpening = function() {
 };
 
 Card.prototype.changeSet = function(newSet) {
-    if (!this.parentSet) {
-        this.parentSet = newSet;
-    }else{
-        this.parentSet.removeCard(this);
-        this.parentSet = newSet;
-        
-    }
+    
+    this.parentSet.removeCard(this);
+    this.parentSet = newSet;
     this.parentSet.addCard(this);
 };
 
